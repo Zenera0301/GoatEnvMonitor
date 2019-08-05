@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomePage_Mine_Fragment"
+    android:orientation="vertical"
+    android:background="@drawable/app_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativelayout_admin">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/iv_admin"
+            android:src="@drawable/admin"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="30dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_admin"
+            android:layout_toRightOf="@+id/iv_admin"
+            android:text="admin"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:layout_toEndOf="@+id/iv_admin" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_adminStr"
+            android:layout_below="@+id/tv_admin"
+            android:layout_toRightOf="@+id/iv_admin"
+            android:text="智能羊舍环境监控"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/iv_admin"
+            android:layout_marginStart="5dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/iv_admin"
+            android:background="#eaeae4" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_d1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dip">
+
+        <Button
+            android:id="@+id/btn_d1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/contact_select_list_style"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="  使用指南"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/newer"
+            android:drawableRight="@drawable/home_index_arrow"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_d2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dip"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="5dip">
+
+        <Button
+            android:id="@+id/btn_d2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/contact_select_list_style"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="  版本介绍"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/historydata"
+            android:drawableRight="@drawable/home_index_arrow"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_d3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dip"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="5dip">
+
+        <Button
+            android:id="@+id/btn_d3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/contact_select_list_style"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="  关于项目"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/aboutproject"
+            android:drawableRight="@drawable/home_index_arrow"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_d4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dip"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="5dip">
+
+        <Button
+            android:id="@+id/btn_d4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/contact_select_list_style"
+            android:drawableLeft="@drawable/phone"
+            android:drawableRight="@drawable/home_index_arrow"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="  联系我们"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            tools:ignore="RtlCompat" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuideActivity"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical">
+    <include
+
+        layout="@layout/toolbar_title"
+        android:id="@+id/toolbar_guide"
+        />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:text="功能简介"
+            android:textSize="25sp"
+            android:paddingStart="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:lineSpacingExtra="8dp"
+            android:textSize="15sp"
+            android:text="软件能够完成的内容有：\n
+\n
+
+1.羊舍环境的实时监控，包括温度、湿度、氨气浓度、空气流速等重要环境参数信息，每隔两秒自动更新参数，真正做到实时监测。\n
+\n
+
+2.根据采集的环境信息，控制风机、喷头、湿帘、刮粪板等设备的启停，以达到平衡羊舍环境，将羊舍环境调整为适合的范围内。\n
+\n
+
+3.集成了大量的网站，汇总了丰富的山羊养殖技巧，供使用者参考学习！\n
+\n"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+</LinearLayout>

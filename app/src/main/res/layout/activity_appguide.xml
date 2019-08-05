@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".fragmentmine.AboutProjectActivity"
+android:background="@drawable/app_bg"
+android:orientation="vertical"
+    >
+    <include
+        layout="@layout/toolbar_title"
+        android:id="@+id/toolbar_contactus"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:text="软件使用指南"
+            android:textSize="25sp"
+            android:paddingStart="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:padding="20dp"
+            android:scrollbars="vertical"
+            android:textSize="15sp"
+            android:text="\n
+    1.登录成功后默认进入首页（下图），首页包括：
+    "/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:src="@drawable/appguide1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:padding="20dp"
+            android:scrollbars="vertical"
+            android:text="\n
+    （1）羊舍相关图片信息的展示橱窗，共四张图片进行轮流播放，且接受手动滑动浏览；\n
+        \n
+    （2）功能栏，包括：功能简介、团队介绍、知识天地、羊友问答四个板块；\n
+        \n
+    （3）网页浏览栏，包括国内各大权威养羊网站，提供了丰富的养羊技巧和经验分享。
+"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:padding="20dp"
+            android:scrollbars="vertical"
+            android:textSize="15sp"
+            android:text="\n
+    2.点击界面底部导航栏中的“环境监控”项，进入羊舍环境监控界面：\n
+\n
+（1）首先看到的是监控节点展示界面，该界面暂包括8个监测节点，监控节点数根据实际需要数量可调；
+"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:src="@drawable/appguide2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:padding="20dp"
+            android:scrollbars="vertical"
+            android:textSize="15sp"
+            android:text="\n
+（2）点击其中一个监控节点（例如一号监控节点），进入一号监控节点的监视界面（中图），该界面展示了一号监测节点当前的温度、湿度、氨气浓度、空气流速，每隔5秒钟自动更新，便于实时监测。监测的具体条目可根据实际需要调整；\n
+"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:src="@drawable/appguide4"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:padding="20dp"
+            android:scrollbars="vertical"
+            android:textSize="15sp"
+            android:text="\n
+（3）点击进入控制界面（右图），该界面是一号监控节点的待控制项的控制界面，待控制项暂时包括风机，待控制项可根据实际需要进行调整，用户可以通过滑动按钮来开启或关闭对待控制项的独立控制。该界面也实现了环境参数每隔两秒的实时更新，便于用户根据实时数据判断是否开启装置以及开启哪个装置。
+"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:src="@drawable/appguide5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:padding="20dp"
+            android:scrollbars="vertical"
+            android:textSize="15sp"
+            android:text="\n
+    3.点击界面底部导航栏中的“阈值设定”项，进入羊舍环境阈值设定界面：
+"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:src="@drawable/appguide3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:padding="20dp"
+            android:scrollbars="vertical"
+            android:textSize="15sp"
+            android:text="\n
+    4.退出控制界面后，点击界面底部导航栏的“我的”项，进入用户界面，用户可以进行软件使用学习，就是本页面，数据查询，关于项目的介绍，以及联系开发者。
+"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:src="@drawable/appguide6"/>
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomePage_Home_Fragment"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!-- 这个总的相对布局是为了方便使用scrollview，scrollview中只能有一个布局 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF7F7F7"
+            android:layout_margin="1dip">
+
+            <!-- 实现图片左右滚动 -->
+            <ViewFlipper
+                android:id="@+id/vf_a"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="8dip"
+                android:flipInterval="3000"
+                android:layout_alignParentTop="true">
+                <!--下面4行需要修改包名称-->
+                <com.goatenvmonitor.XCRoundRectImageView
+                    android:id="@+id/iv_show_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/nannong" />
+
+                <com.goatenvmonitor.XCRoundRectImageView
+                    android:id="@+id/iv_show_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/nannonggate"/>
+
+                <com.goatenvmonitor.XCRoundRectImageView
+                    android:id="@+id/iv_show_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dongda"/>
+
+                <com.goatenvmonitor.XCRoundRectImageView
+                    android:id="@+id/iv_show_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/nanhang"/>
+            </ViewFlipper>
+            <!-- 实现小圆点的并排显示 -->
+            <LinearLayout
+                android:id="@+id/show_dot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_below="@id/vf_a"
+                android:layout_marginBottom="2dip">
+                <View
+                    android:id="@+id/dot1"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_margin="1.5dip"
+                    android:background="@drawable/dot_focused">
+                </View>
+                <View
+                    android:id="@+id/dot2"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_margin="1.5dip"
+                    android:background="@drawable/dot_normal">
+                </View>
+                <View
+                    android:id="@+id/dot3"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_margin="1.5dip"
+                    android:background="@drawable/dot_normal">
+                </View>
+                <View
+                    android:id="@+id/dot4"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_margin="1.5dip"
+                    android:background="@drawable/dot_normal">
+                </View>
+            </LinearLayout>
+
+            <!-- 实现选项图和字的并排显示-->
+            <LinearLayout
+                android:id="@+id/ll_4btn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/show_dot"
+                android:layout_marginBottom="2dip">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_btn41"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/guideblack"/>
+
+                    <TextView
+                        android:id="@+id/tv_btn41"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_btn41"
+                        android:gravity="center"
+                        android:text="功能简介"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_btn42"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/teamblack"/>
+
+                    <TextView
+                        android:id="@+id/tv_btn42"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_btn42"
+                        android:gravity="center"
+                        android:text="团队介绍"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_btn43"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/knowledgeblack"/>
+
+                    <TextView
+                        android:id="@+id/tv_btn43"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_btn43"
+                        android:gravity="center"
+                        android:text="知识天地"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_btn44"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/feedbackblack"/>
+
+                    <TextView
+                        android:id="@+id/tv_btn44"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_btn44"
+                        android:gravity="center"
+                        android:text="羊友问答"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- 实现超强大的滚动视窗 比ListView控件优秀 -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ll_4btn"
+                android:dividerHeight="8dp"
+                android:layout_marginBottom="1dip">
+            </android.support.v7.widget.RecyclerView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

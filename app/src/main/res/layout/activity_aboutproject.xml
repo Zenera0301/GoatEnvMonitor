@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentmine.AboutProjectActivity"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical"
+    >
+    <include
+        layout="@layout/toolbar_title"
+        android:id="@+id/toolbar_aboutproject"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp"
+                android:text="软件功能简介"
+                android:textSize="25sp"
+                android:paddingStart="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="8dp"
+                android:padding="20dp"
+                android:scrollbars="vertical"
+                android:textSize="15sp"
+                android:text="课题名称：标准化羊舍设计、环境控制与设施工程技术集成与应用\n
+\n
+所属项目：肉用山羊规模化高效安全养殖关键技术集成与示范\n
+\n
+所属专项：畜禽重大疫病防控与高效安全养殖综合技术研发\n
+\n
+项目牵头承担单位：南京农业大学\n
+\n
+课题承担单位：南京农业大学\n
+\n
+课题负责人：王锋\n
+\n
+执行期限：2018.1 - 2020.12\n
+\n
+课题简介：针对我国肉用山羊养殖环境粗放、养殖废弃物资源化利用率低等问题，将新材料、新工艺与圈舍设计相结合，集成规模化羊舍饲喂设施、消毒清粪装置、环境监控装置、物联网及智能化管理等设施自动化技术，建立适用于不同规模和养殖方式的实用型羊舍示范样板，开展标准化羊舍设施的示范与推广；根据南方地区气候和生态特点，建立适应南方湿热条件的羊舍环境控制方案；开发羊粪便无害化处理及病死羊的资源化利用技术，示范与推广羊粪污制造有机肥料及病死羊制造氨基酸水溶肥的技术规程。建立适度规模化、标准化生产核心场和示范场2-3个，示范规模1500-3000只，核心场和示范场常规污染物排放量削减60%以上，
+粪污及病死动物资源化率达到80%，申请发明专利3-4项，培训一线养殖技术人员200-300人次，技术覆盖养殖规模50万只。" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="8dp"
+                android:padding="20dp"
+                android:singleLine="false"
+                android:text="课题目标：\n
+1.“课题目标”，应从以下方面明确描述：\n（1）研发主要针对什么问题和需求；\n（2）将要解决哪些科学问题、突破哪些核心/共性/关键技术；\n（3）预期成果；\n（4）成果将以何种方式应用在哪些领域/行业/重大工程等，并拟在科技、经济、社会、环境或国防安全等方面发挥何种的作用和影响。\n
+\n
+2.“考核指标”，指相应成果的数量指标、技术指标、质量指标、应用指标和产业化指标等，其中，数量指标可以为论文、专利、产品等的数量；技术指标可以为关键技术、产品的性能参数等；质量指标可以为产品的耐震动、高低温、无故障运行时间等；应用指标可以为成果应用的对象、范围和效果等；产业化指标可以为成果产业化的数量、经济效益等。同时，对各项考核指标需填写立项时已有的指标值/状态以及课题完成时要到达的指标值/状态。同时，考核指标也应包括支撑和服务其他重大科研、经济、社会发展、生态环境、科学普及需求等方面的直接和间接效益。如对国家重大工程、社会民生发展等提供了关键技术支撑，成果转让并带动了环境改善、实现了销售收入等。若某项成果属于开创性的成果，立项时已有指标值/状态可填写“无”,若某项成果在立项时已有指标值/状态难以界定，则可填写“/”。\n\n
+3.“中期指标”，各专项根据管理特点，确定是否填写，鼓励阶段目标明确的项目课题填写中期指标。\n\n
+4.“考核方式方法”，应提出符合相关研究成果与指标的具体考核技术方法、测算方法等。\n\n
+5.“科技报告类型”，包括项目验收前撰写的全面描述研究过程和技术内容的最终科技报告、项目年度或中期检查时撰写的描述本年度研究过程和进展的年度技术进展报告以及在项目实施过程中撰写的包含科研活动细节及基础数据的专题科技报告（如实验报告、试验报告、调研报告、技术考察报告、设计报告、测试报告等）。其中，每个项目在验收前应撰写一份最终科技报告；研究期限超过2年（含2年）的项目，应根据管理要求，每年撰写一份年度技术进展报告；每个项目可根据研究内容、期限和经费强度，撰写数量不等的专题科技报告。科技报告应按国家标准规定的格式撰写。\n\n
+6.“公开类别及时限”，公开项目科技报告分为公开或延期公开，内容需要发表论文、申请专利、出版专著或涉及技术诀窍的，可标注为“延期公开”。需要发表论文的，延期公开时限原则上在2年（含2年）以内；需要申请专利、出版专著的，延期公开时限原则上在3年（含3年）以内；涉及技术诀窍的，延期公开时限原则上在5年（含5年）以内。涉密项目科技报告按照有关规定管理。\n"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>
